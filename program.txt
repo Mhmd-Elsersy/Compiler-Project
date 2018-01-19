@@ -1,0 +1,39 @@
+#start 
+    
+	float string = 5.6433 ;
+    
+	int buffer =  0 ;
+    
+	int i = 0 ;
+    
+	int j = 0 ;
+    
+	int  state = 0 ;
+    
+	loop ( ( string + i ) nq 0 ) :
+        
+		loop ( ( string + i )  eq 1 or ( string + i ) gr 5 ) :
+            
+			if ( ( string + i ) lse 1 ) :
+                
+				state = arr * 1 + i ;
+                
+				if ( state eq 9 ) :
+                    
+					state = 35 * j + 2 * i ;
+                
+				else :
+                    
+					buffer = string + i ;
+                    
+					j = j + 1 ;
+                
+				endif
+            
+			endif
+        
+		endloop
+    
+	endloop    
+
+#end 
